@@ -1,0 +1,59 @@
+.modal {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.active {
+  pointer-events: all;
+
+  opacity: 1;
+}
+.modal-content {
+  width: 40%;
+  height: 50%;
+}
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //   h2 {
+  //   }
+  button,
+  button:active,
+  button:focus {
+    outline: none;
+  }
+  button {
+    border: none;
+    background: transparent;
+    color: azure;
+    font-size: 1.3rem;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.116);
+    }
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 8px 16px;
+
+  background: rgb(50, 72, 62);
+}
